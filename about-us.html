@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Best University Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/ded1dbcfea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div id="nav-links">
+                <i class="fas fa-times fa-2x" onclick="hide()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars fa-2x" onclick="show()"></i>
+        </nav>
+        <div id="title-aboutus">
+            <h1>ABOUT US</h1>
+        </div>
+    </section>
+    <div id="pioneer">
+        <h3>PIONEERS SINCE 1838</h3>
+        <p>We started out 180 years ago as the first college in Jammu and one of the first in the Jammu and kashmir,
+            established to educate the working people of Jammu. Today we continue to build on this reputation,
+            helping students from a variety of backgrounds to realise their full potential.</p>
+    </div>
+    <div id="info">
+        <div class="info-box">
+            <h4 class="info-h4">1500+</h4>
+            <h5 class="info-h5">Students</h5>
+            <p>We support more than 19,000 students on our undergraduate, postgraduate and professional courses.</p>
+        </div>
+        <div class="info-box">
+            <h4 class="info-h4">100+</h4>
+            <h5 class="info-h5">Courses</h5>
+            <p>We provide more than 100+ courses for the students.We assure that students choose their course according
+                as their interest.</p>
+        </div>
+        <div class="info-box">
+            <h4 class="info-h4">150+</h4>
+            <h5 class="info-h5">Partners</h5>
+            <p>Our partners include large corporates, SMEs and charities, which offer placements and work experience to
+                our students.</p>
+        </div>
+    </div>
+    <div id="our-university">
+        <h3>Our University</h3>
+        <div class="university-row">
+            <div class="university-col">
+                <h5>Our Mission & Values</h5>
+                <p>We provide grounded, holistic education with wide horizons and opportunities, so that people from
+                    every background can realise their true potential, contributing to a richer, happier society.</p>
+            </div>
+            <div class="university-col">
+                <h5>Our Heritage</h5>
+                <p>The University of Westminster boasts a rich history and has been providing students with academic excellence, cultural engagement and personal enrichment since its inception as The Polytechnic Institution in 1838.</p>
+            </div>
+            <div class="university-col">
+                <h5>Global Westminster</h5>
+                <p>Our University has a long and proud history of international collaboration and global engagement from our research partnerships, colleagues, students and alumni from across the world.</p>
+            </div>
+        </div>
+    </div>
+    <div id="grad-destination">
+        <h3>GRADUATE DESTINATIONS</h3>
+        <p>Our graduates go on to work for a variety of organisations around the world, including top employers such as
+            :</p>
+    </div>
+    <div id="organisations">
+        <img src="images/logo1.png" alt="">
+        <img src="images/logo2.png" alt="">
+        <img src="images/logo3.png" alt="">
+        <img src="images/logo4.png" alt="">
+        <img src="images/logo5.png" alt="">
+    </div>
+    <section id="footer">
+        <h4>About Us</h4>
+        <p>The College of Education has established a reputation for excellence and visionary thinking in its efforts to
+            improve teaching and learning across our nation and world, particularly within the contexts of urban and
+            global education. The faculty remains committed to addressing the educational and physical needs of all
+            learners across the life span, and to working closely with educators, leaders and policymakers in the field.
+        </p>
+        <div id="footer-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+    <section id="credit">
+        <p>
+            Made By &nbsp<i class="fas fa-heart"></i> &nbsp Shivam. Copyright &#169 2020-22</i>
+        </p>
+    </section>
+
+
+
+
+
+
+    <!-- Java Script for toggle menu -->
+    <script>
+        var nav = document.getElementById("nav-links");
+        function show() {
+            nav.style.right = "0px"
+        }
+        function hide() {
+            nav.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

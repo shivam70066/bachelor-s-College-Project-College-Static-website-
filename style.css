@@ -1,0 +1,588 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+           /* MAIN PAGE  */
+
+
+body{
+    overflow-x: hidden;
+}
+#header{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.39),rgba(0, 0, 255, 0.39)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+nav img{
+    margin: 1px 5px 1px 100px;
+    height: 100px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav-links ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 20px 0px 0px 8px;
+    padding: 10px;
+}
+#nav-links ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s;
+    border-radius: 10px;
+    padding: 2px 9px;
+}
+#nav-links ul li a:hover{
+    color: black;
+    background:rgba(255, 255, 255, 0.753);
+}
+#header nav .fas{
+    display: none;
+}
+/* Front heading */
+#textbox{
+    display: flex;
+    height: 72vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#textbox h1{
+    font-size: 5.5rem;
+    color: rgba(255, 255, 255, 0.966);
+    text-align: center;
+    padding: 16px 8px;
+    margin-top: 60px;
+}
+#textbox p{
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.945);
+    width: 98%
+}
+.button{
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding: 5px 9px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.205);
+    transition: 0.2s;
+}
+.button:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.541);
+    border: 2px solid rgba(0, 0, 0, 0.705);
+    transform: scale(1.08);
+}
+/* SEction Courses */
+#courses{
+    width: 95%;
+    margin: auto;
+}
+.h1-style{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.5rem;
+    padding-top: 30px;
+    margin: 1px;
+}
+.p-style{
+    text-align: center;
+    padding: 18px 50px;
+    font-size: 1.5rem;
+}
+.row-boxes{
+    display: flex;
+    flex-basis: 33%;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 15px;
+}
+.box{
+    flex-basis: 33%;
+    margin: 17px;
+    background: floralwhite;
+    border-radius: 18px;
+    border-top: 4px solid rgba(87, 80, 71, 0.219);
+    transition: 0.25s;
+}
+.box:hover{
+    background: rgba(255, 235, 205, 0.856);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.5);
+    border-top: 4px solid rgb(87, 80, 71);
+    transform: translateY(-2.5%);
+}
+.h3-style{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 5px;
+    margin: 9px 5px;
+}
+.p-style-cbox{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 20px 5px;
+    padding: 5px 5px;
+}
+#campus{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.campus-box{
+    flex-basis: 29%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    position: relative;
+}
+.campus-box img{
+    width: 100%;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layer:hover{
+    background: rgba(255, 0, 0, 0.534);
+}
+.layer h3{
+    width: 100%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: white;
+    font-size: 1.9rem;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 55%;
+}
+/* Facilities sextion */
+
+
+#facilities{
+    width: 90%;
+    margin: auto;
+}
+.facilities-boxes{
+    flex-basis: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+.facilities-boxes:hover{
+    transform: scale(1.01);
+}
+.facilities-boxes img{
+    width: 100%;
+    border-radius: 30px;
+}
+.facilities-boxes:hover img{
+    border-radius: 10px;
+}
+.facilities-boxes h4{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.facilities-boxes p{
+    font-size: 1.rem;
+    padding: 5px;
+    margin: 5px;
+}
+/* Testimonial Section */
+#testimonial{
+    width: 95%;
+    margin: auto;
+}
+.testimonial-box{
+    flex-basis: 40%;
+    background-color: rgba(255, 235, 205, 0.479);
+    padding: 10px 2px;
+    margin: 30px auto;
+    border-radius: 15px;
+    transition: all 0.25s;
+}
+.testimonial-box:hover {
+    background-color: blanchedalmond;
+    box-shadow: rgb(128 128 128 / 40%) 6px 6px 6px 0px;
+    transform: scale(1.04);
+    border-radius: 35px;
+
+}
+.testimonial-box img{
+    height: 60px;
+    border-radius: 40px;
+    margin: 1px 6px;
+    position: absolute;
+}
+.testimonial-box h3{
+    padding-left: 100px;
+}
+.testimonial-box h2{
+    text-align: right;
+    padding: 3px 9px;
+}
+
+
+/* Enroll Section */
+
+
+#enroll{
+    width: 85%;
+    margin: 80px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.459),rgba(0, 0, 0, 0.459)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+}
+#enroll:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.685)),url(images/banner2.jpg);
+}
+#enroll-box{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#enroll-box h2{
+    color: honeydew;
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 3rem;
+}
+
+
+/* footer section */
+#footer{
+    width: 100%;
+    background: darkgray;
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#footer h4{
+    font-size: 2.5rem;
+    margin: 10px auto;
+    padding: 4px;
+}
+#footer p{
+    font-size: 1.2rem;
+    margin: 10px 150px;
+    padding: 4px;
+}
+#footer .fab{
+    font-size: 3rem;
+    margin: 10px auto;
+    padding: 0px 25px;
+    transition: all 0.2s;
+}
+#footer .fab:hover{
+   transform: scale(1.2);
+}
+#footer .fa-twitter{
+    color: rgb(29, 161, 245);
+}
+#footer .fa-facebook{
+    color: rgb(66,103,178)
+}
+#footer .fa-instagram{
+    color: rgb(194, 54, 132);
+}
+
+
+/* sextion credit */
+
+
+#credit{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+#credit p{
+    padding: 5px;
+}
+#credit .fas{
+    color: red;
+}
+
+
+
+            /* About Us Page */
+
+
+#sub-header{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.747),rgba(0, 0, 0, 0.507)),url(images/background.jpg);
+    height: 65vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sub-header nav .fas{
+    display: none;
+}
+#title-aboutus{
+    display: flex;
+    color: white;
+    font-size: 2.8rem;
+    height: 47vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#pioneer{
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+#pioneer h3{
+    color: darkolivegreen;
+    font-size: 3.5rem;
+    margin: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#pioneer p{
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+#info{
+    display: flex;
+    justify-content: space-between;
+    width: 79%;
+    margin: 50px auto;
+}
+.info-box{
+    flex-basis: 30%;
+    text-align: center;
+}
+.info-h4{
+    font-size: 4.7rem;
+    margin: 20px 0px;
+    color: darkslategrey;
+    font-family: cursive;
+}
+.info-h5{
+    font-size: 2.2rem;
+}
+.info-box p{
+    margin: 15px;
+    font-size: 1.2rem;
+}
+#grad-destination{
+    width: 60%;
+    text-align: center;
+    margin: 30px auto;
+}
+#grad-destination h3{
+    font-size: 3rem;
+    margin: 20px;
+}
+#grad-destination p{
+    font-size: 1.5rem;
+}
+#organisations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 35px auto;
+}
+#organisations img{
+    width: 10%;
+    margin: 20px 50px;
+}
+#our-university{
+    width: 80%;
+    margin: auto;
+}
+#our-university h3{
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 20px 0px 40px 0px;
+}
+.university-row{
+    display: flex;
+    margin: 10px;
+}
+.university-col{
+    background-color: rgba(80, 191, 255, 0.13);
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 7px 10px 7px 3px rgba(128, 128, 128, 0.322);
+}
+.university-col h5{
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.university-col p{
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#location{
+    width: 80%;
+    margin: 50px auto;
+    height: auto;
+}
+#location iframe{
+    width: 100%;
+}
+#contact{
+    width: 80%;
+    margin: auto;
+}
+.contact-row{
+    display: flex;
+    margin-bottom: 35px;
+}
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col h4{
+    margin: 10px;
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact-col p{
+    margin: 10px;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contact-col div .fa{
+    font-size: 2rem;
+    color: orangered;
+    margin: 10px 25px;
+}
+.contact-col input,.contact-col textarea{
+    width: 95%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    box-sizing: border-box;
+}
+.buttons{
+    display: block;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    background-color: transparent;
+    transition: 0.25s;
+}
+.buttons:hover{
+    background-color: orangered;
+    color: white;
+    border: 1px solid black;
+}
+
+
+       /* course page */
+
+#courses-name ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin: 20px;
+}   
+#courses-name ul li{
+    padding: 10px;
+    margin: 10px;
+}    
+.h3-centr{
+    text-align: center;
+    font-size: 33px;
+    margin: 40px;
+}
+.course-row{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#courses-name a{
+    font-size: 20px;
+    padding: 3px 6px;
+    text-decoration: none;
+    color: black; 
+}
+#courses-name a:hover{
+    border-radius: 5px;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.897);
+}
+.course-col{
+    background-color: rgba(80, 191, 255, 0.13);
+    margin: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 7px 10px 7px 3px rgba(128, 128, 128, 0.322);
+    width: 40%;
+    padding-bottom: 10px;
+}
+.course-col:hover{
+    background-color: rgba(80, 191, 255, 0.192);
+    transform: translateY(1%);
+}
+.course-col h4{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    border-bottom: 1px solid red;
+}
+.course-col li{
+    margin: 8px 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 17px;
+}

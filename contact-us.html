@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Best University Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/ded1dbcfea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div id="nav-links">
+                <i class="fas fa-times fa-2x" onclick="hide()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars fa-2x" onclick="show()"></i>
+        </nav>
+        <div id="title-aboutus">
+            <h1>Contact US</h1>
+        </div>
+    </section>
+
+    <section id="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3369.239393788806!2d75.51711041501889!3d32.38594388109189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c70710210dbed%3A0xa5bf164ceebbaa4d!2sGovernment%20Degree%20College!5e0!3m2!1sen!2sin!4v1630853821430!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="contact">
+        <div class="contact-row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h4>College Road, Urliwand, Kathua </h4>
+                        <p>Jammu and Kashmir, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h4>+919005001001</h4>
+                        <p>Monday To Saturday, 9AM to 5PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h4>ourcollegebest@gmail.com</h4>
+                        <p>Email Us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your E-Mail" required>
+                    <input type="text" name="subject" placeholder="Enter Your subject" required>
+                    <textarea  rows="8" name="message" placeholder="Message" required></textarea>
+                    <button class="buttons" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="footer">
+        <h4>About Us</h4>
+        <p>The College of Education has established a reputation for excellence and visionary thinking in its efforts to
+            improve teaching and learning across our nation and world, particularly within the contexts of urban and
+            global education. The faculty remains committed to addressing the educational and physical needs of all
+            learners across the life span, and to working closely with educators, leaders and policymakers in the field.
+        </p>
+        <div id="footer-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+    <section id="credit">
+        <p>
+            Made By &nbsp<i class="fas fa-heart"></i> &nbsp Shivam. Copyright &#169 2020-22</i>
+        </p>
+    </section>
+
+    <!-- Java Script for toggle menu -->
+
+
+    <script>
+        var nav = document.getElementById("nav-links");
+        function show() {
+            nav.style.right = "0px"
+        }
+        function hide() {
+            nav.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
